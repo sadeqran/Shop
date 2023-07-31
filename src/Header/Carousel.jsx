@@ -1,15 +1,14 @@
 import React from "react";
 
-const RightNav = () => {
+const Carousel = () => {
   return (
     <div>
       <div
-        id=" carouselExampleAutoplaying"
-        className="carousel slide carousel-fade"
+        id="carouselExampleIndicators"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
-
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -26,21 +25,20 @@ const RightNav = () => {
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
-          
         </div>
 
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src={"/assets/image/mark2.jpeg"}
-              className="d-block w-100"
+              src={"./assets/image/slider/mark2.jpeg"}
+              className="d-block w-100 "
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              src={"/assets/image/sa.jpg"}
-              className="d-block w-100"
+              src={"./assets/image/slider/sa.jpg"}
+              className="d-block w-100 "
               alt="..."
             />
           </div>
@@ -74,4 +72,4 @@ const RightNav = () => {
   );
 };
 
-export default RightNav;
+export default Carousel;

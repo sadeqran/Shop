@@ -1,9 +1,9 @@
 import React from "react";
 
-const Leftnav = () => {
+const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light pink ">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top pink ">
         <a className="navbar-brand" href="/">
           <img
             src={"/assets/image/mark2.png"}
@@ -27,10 +27,10 @@ const Leftnav = () => {
         </button>
 
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul className="navbar-nav justify-content-around ">
+          <ul className="navbar-nav f-1 justify-content-around ">
             <li className="nav-item active">
               <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
+                صفحه اصلی <span className="sr-only">(current)</span>
               </a>
             </li>
 
@@ -59,7 +59,7 @@ const Leftnav = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#discount">
                 تخفیفات
               </a>
             </li>
@@ -73,11 +73,10 @@ const Leftnav = () => {
 
             <li className="nav-item">
               <a className="nav-link" href="/">
-              <i className="bi bi-search"></i>
-              <i className="bi bi-person-circle pl-2"></i>
+                <i className="bi bi-search"></i>
+                <i className="bi bi-person-circle pl-2"></i>
               </a>
             </li>
-            
           </ul>
         </div>
       </nav>
@@ -85,4 +84,4 @@ const Leftnav = () => {
   );
 };
 
-export default Leftnav;
+export default Navbar;

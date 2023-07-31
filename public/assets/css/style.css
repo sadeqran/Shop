@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "BYekan";
+  src: url("../bootstrap/fonts/BYekan/BYekan-webfont.eot") format("eot"),
+    url("../bootstrap/fonts/BYekan/BYekan-webfont.woff") format("woff"),
+    url("../bootstrap/fonts/BYekan/BYekan-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "BYekan";
+}
+
+.pink {
+  background: rgba(255, 170, 205, 0.9);
+}
+.blue {
+  background: #e3f2fd;
+}
+
+.faj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+.carouselIndiBtn {
+  border: 0;
+  margin: 1px;
+  padding: 1%;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+.carouselIndiBtn.active {
+  opacity: 0.8;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.fixed-top {
+  right: 15px;
+  left: 15px;
+  border-radius: 0 0 15px 15px;
+  z-index: 1000;
+}
+.h-512 {
+  height: 512px;
+}
+
+@media screen and (max-width: 767px) {
+  .h-390 {
+    height: 325px;
+  }
+}
+
+.bg-s {
+  background: #42c58a;
+}
+.bg-r {
+  background: #dc143c;
+}
+.bg-b {
+  background: #4ec7f3;
+}
+.h-40 {
+  height: 40px;
+}
+.h-80 {
+  height: 80px;
+  font-size: 25px;
+}
+.d-rtl {
+  direction: rtl;
+}
+
+.imgcard {
+  width: 225px;
+  height: 250px;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  width: 225px;
+  height: 40px;
+  border-radius: 0px 50px 50px 50px;
+  font-size: 25px;
+  color: white;
+}
+
+.cardIn {
+  position: relative;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  height: 100%;
+}
+.cardIn .front-face,
+.cardIn .back-face {
+  backface-visibility: hidden;
+  transition: all 0.7s cubic-bezier(0.4, 0.2, 0.2, 0.1);
+}
+
+.cardIn .back-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+.cardIn .back-face h2 {
+  margin: 0;
+  color: #ffff;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.cardIn .back-face p {
+  margin: 0;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.cardIn .back-face span,
+del {
+  color: #ddd;
+}
+
+.cardIn .back-face .icons i {
+  cursor: pointer;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.cardIn:hover > .back-face {
+  transform: rotateY(0deg);
+}
+.cardIn:hover > .front-face {
+  transform: rotateY(-180deg);
+}
+
+.backimg {
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+
+.cartBtn i {
+  transform: scaleX(-1);
+}
+.cartBtn {
+  cursor: pointer;
+  font-size: 15px;
+}
+/* textcss */
+#container {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 8s linear infinite;
+}
+
+#flip div div {
+  background: #42c58a;
+}
+#flip div:first-child div {
+  background: #4ec7f3;
+}
+#flip div:last-child div {
+  background: #dc143c;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+/* textcss */
