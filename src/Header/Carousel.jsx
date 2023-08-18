@@ -50,10 +50,10 @@ const Carousel = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
+          <i
+            className="fa-sharp fas fa-chevron-left fa-2xl red"
             aria-hidden="true"
-          ></span>
+          ></i>
         </button>
 
         <button
@@ -62,10 +62,10 @@ const Carousel = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
+          <i
+            className="fa-sharp fas fa-chevron-right fa-2xl red"
             aria-hidden="true"
-          ></span>
+          ></i>
         </button>
       </div>
     </div>

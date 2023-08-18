@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slide = ({imagePath}) => {
     return (
-        <div className="slide">
+        <div className="slide faj">
             <img
               src={imagePath}
               height="100"

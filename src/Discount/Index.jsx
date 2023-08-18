@@ -4,9 +4,9 @@ import Card from "./Card";
 const Index = () => {
   return (
     <div className="row d-rtl" id="discount">
-      <div className="col-sm-4">
+      <div className="col-md-4 ">
         <div className="h-80 faj">
-          <div className="h-40 faj pink f-1 rounded ">تخفیفات</div>
+          <div className="h-40 faj bg-p f-1 rounded ">تخفیفات</div>
         </div>
         <Card
           imagePath={"./assets/image/cake/dokh.png"}
@@ -16,8 +16,9 @@ const Index = () => {
           descrip={"با طعم وانیل"}
         />
       </div>
-      <div className="col-sm-4 ">
-        <div className="h-40 d-none d-sm-block"></div>
+
+      <div className="col-md-4 ">
+        <div className="h-40 d-none d-md-block"></div>
         <Card
           imagePath={"./assets/image/cake/love.png"}
           bg={"bg-r"}
@@ -26,7 +27,8 @@ const Index = () => {
           descrip={"با طعم شکلات"}
         />
       </div>
-      <div className="col-sm-4 ">
+
+      <div className="col-md-4 ">
         <Card
           imagePath={"./assets/image/cake/sadeh.png"}
           bg={"bg-s"}

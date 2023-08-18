@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top pink ">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-p">
         <a className="navbar-brand" href="/">
           <img
             src={"/assets/image/mark2.png"}
@@ -14,6 +14,7 @@ const Navbar = () => {
           />
           MARS
         </a>
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -72,10 +73,15 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                <i className="bi bi-search"></i>
-                <i className="bi bi-person-circle pl-2"></i>
-              </a>
+              <div className="nav-link">
+                <input className="search" />
+                <button className="btn-search" type="submit">
+                  <i className="bi bi-search "></i>
+                </button>
+                <button className="btn-log ml-2" type="submit">
+                  <i className="bi bi-person-circle "></i>
+                </button>
+              </div>
             </li>
           </ul>
         </div>

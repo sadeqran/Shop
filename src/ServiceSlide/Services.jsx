@@ -5,7 +5,7 @@ import Slide from "./Slide";
 const Services = () => {
   return (
     <div>
-      <div className="slider">
+      <div className="slider faj">
         <div className="slide-track">
           <Slide imagePath={"./assets/image/services/ersal.jpg"} />
           <Slide imagePath={"./assets/image/services/moshavere.jpg"} />

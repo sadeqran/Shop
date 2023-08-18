@@ -1,15 +1,9 @@
-@mixin white-gradient {
-	background: linear-gradient(
-	  to right,
-	  rgba(255, 255, 255, 1) 0%,
-	  rgba(255, 255, 255, 0) 100%
-	);
+.slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
   }
-  
-  $animationSpeed: 40s;
-  
-  // Animation
-  @keyframes scroll {
+
+@keyframes scroll {
 	0% {
 	  transform: translateX(-1000px);
 	}
@@ -22,17 +16,17 @@
 	  transform: translateX(-1000px);
 	}
   }
-  .slide-track {
-	animation: scroll $animationSpeed linear infinite;
-	display: flex;
-	animation-fill-mode: forwards;
+  
+  @mixin white-gradient {
+	background: linear-gradient(
+	  to right,
+	  rgba(255, 255, 255, 1) 0%,
+	  rgba(255, 255, 255, 0) 100%
+	);
   }
   
   // Styling
   .slider {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
 	height: 100px;
