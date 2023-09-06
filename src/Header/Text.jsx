@@ -4,9 +4,9 @@ import React from "react";
 const Text = () => {
   return (
     <div>
-      <div id="container">
+      <div className="textHead">
         با ما
-        <div id="flip">
+        <div id="flip" >
           <div>
             <div>کار</div>
           </div>

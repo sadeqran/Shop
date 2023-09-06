@@ -1,5 +1,4 @@
 import React from "react";
-import "./services.scss";
 import Slide from "./Slide";
 
 const Services = () => {

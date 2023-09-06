@@ -2,13 +2,14 @@ import React from "react";
 import FrontFace from "./FrontFace";
 import BackFace from "./BackFace";
 
-const Insta = ({ bg, imagePath, price, name, descrip }) => {
+const Card = ({ id, name, path, price, descrip, bg }) => {
   return (
     <div className="cardIn faj">
-      <FrontFace bg={bg} imagePath={imagePath} price={price} />
+      <FrontFace bg={bg} imagePath={path} price={price} />
       <BackFace
+        id={id}
         bg={bg}
-        imagePath={imagePath}
+        imagePath={path}
         price={price}
         name={name}
         descrip={descrip}
@@ -17,4 +18,4 @@ const Insta = ({ bg, imagePath, price, name, descrip }) => {
   );
 };
 
-export default Insta;
+export default Card;

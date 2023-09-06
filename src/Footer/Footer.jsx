@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="container text-center mt-5">
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <H6 name={"MARS"} />
+                <H6 name={"Suggest"} />
                 {/* <p>
                   "خوشحالی فروش": راه به شادی و بهبود روحی ما در "خوشحالی فروش"
                   با ارائه پکیج‌های بهبودی حال روحی، به شما کمک می‌کنیم تا با
@@ -41,16 +41,16 @@ const Footer = () => {
                   خواهیم بود.
                 </p> */}
 
-                <form action="" className="form">
-                  <div className="mars faj mb-2">
-                    <input className="input" type="email" placeholder="Email" />
-                    <button className="btn button faj" type="submit">
+                <form action="" className="formFooter">
+                  <div className="w-100 faj mb-2" >
+                    <input className="emailInputFooter" type="email" placeholder="Email" />
+                    <button className="btn buttonFooter faj" type="submit">
                       <i className="fas fa-arrow-right-long fa-lg fa-light"></i>
                     </button>
                   </div>
 
                   <textarea
-                    className="textarea"
+                    className="textareaFooter"
                     rows={"4"}
                     placeholder="suggest"
                   />
@@ -75,7 +75,7 @@ const Footer = () => {
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <H6 name={"Contact"} />
-                <div className="mashala">
+                <div className="infor">
                   <Contact icon={"home"} name={"نارمک"} />
                   <Contact icon={"envelope"} name={"info@example.com"} />
                   <Contact icon={"phone"} name={"09358676598"} />
@@ -86,7 +86,7 @@ const Footer = () => {
         </section>
 
         <div className="text-center p-3 rounded-b">
-          <a className="text-dark" href="https://mdbootstrap.com/">
+          <a className="text-dark" href="https://mars.com/">
             MARS.com
           </a>
         </div>

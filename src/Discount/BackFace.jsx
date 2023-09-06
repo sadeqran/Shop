@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const BackFace = ({ bg, imagePath, price, name, descrip }) => {
+const BackFace = ({ id, bg, imagePath, price, name, descrip }) => {
   return (
     <div className="back-face">
       <img className="imgcard rounded backimg" src={imagePath} alt="/" />
@@ -13,11 +14,12 @@ const BackFace = ({ bg, imagePath, price, name, descrip }) => {
         <i className="bi bi-instagram red" title="اینستاگرام"></i>
         <i className="bi bi-whatsapp green" title="واتساپ"></i>
       </div>
-
-      <div className={`price faj ${bg} cartBtn`}>
-        <i className="bi bi-cart4 faj pr-1"></i>
-        افزودن به سبد خرید
-      </div>
+      <NavLink to={`/kharid/${id}`}>
+        <button className={`price faj ${bg} cartBtn`}>
+          <i className="bi bi-cart4 faj pr-1"></i>
+          افزودن به سبد خرید
+        </button>
+      </NavLink>
     </div>
   );
 };
