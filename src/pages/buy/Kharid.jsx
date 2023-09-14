@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { useProducts } from "../context/productsContext";
+import { useProducts } from "../../context/productsContext";
 
 const Kharid = () => {
   const { productId } = useParams();
@@ -24,7 +24,6 @@ const Kharid = () => {
   return (
     <div>
       <div className="kharid row">
-
         <div className="col-md-4 faj mb-2">
           <div className="toolIcons">
             <div className="li faj">
@@ -48,7 +47,7 @@ const Kharid = () => {
         <div className="col-md-4 faj col-sm-6">
           <img className="kharidImg" src={product.path} alt="/" width={"390"} />
         </div>
-        
+
         <div className="col-md-4 faj flex-column col-sm-6">
           <div className="proInfo">
             <h1>{product.name}</h1>
@@ -66,13 +65,11 @@ const Kharid = () => {
           <NavLink
             key={suggestedProduct.id}
             to={`/kharid/${suggestedProduct.id}`}
-            className="suggests"
           >
             <img className="sugImg" src={suggestedProduct.path} alt="" />
           </NavLink>
         ))}
       </div>
-
     </div>
   );
 };

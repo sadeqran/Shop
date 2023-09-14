@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { useProducts } from "../context/productsContext";
+import { useProducts } from "../../../context/productsContext";
 
 const Index = () => {
   const products = useProducts();

@@ -1,6 +1,6 @@
 import React from "react";
 import Option from "./Option";
-import { useProducts } from "../context/productsContext";
+import { useProducts } from "../../../context/productsContext";
 
 const Gallery = () => {
   const products = useProducts();

@@ -1,5 +1,5 @@
 import React from "react";
-import { useProducts } from "../context/productsContext";
+import { useProducts } from "../../context/productsContext";
 import { useParams } from "react-router-dom";
 
 const Factor = () => {
